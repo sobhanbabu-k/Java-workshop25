@@ -8,6 +8,10 @@ public final class Residential extends Building {
         this.type = aType;
     }
 
+    public Residential() {
+        super();
+    }
+
     @Override
     public void getEBill() {
         System.out.println("CurrentBill For Residential");

@@ -11,6 +11,10 @@ public sealed abstract class Building permits Residential, Commericial {
     private float squareFeets;
     private boolean parkingAvaiable;
 
+    public Building() {
+
+    }
+
     public abstract void getEBill();
 
     public Building(String name,float height, float squareFeet){
