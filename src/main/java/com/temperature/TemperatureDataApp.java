@@ -18,9 +18,9 @@ public class TemperatureDataApp {
         organization.setContactNumber("1234567899");
 
         FileOutputStream fileOutputStream = new FileOutputStream("ourkadaitech.txt");
-        ObjectOutputStream outputStream=new ObjectOutputStream(fileOutputStream);
-        outputStream.writeObject(organization);
-        outputStream.close();
+        ObjectOutputStream objectOutputStream=new ObjectOutputStream(fileOutputStream);
+        objectOutputStream.writeObject(organization);
+        objectOutputStream.close();
         fileOutputStream.close();
         FileInputStream fileInputStream = new FileInputStream("ourkadaitech.txt");
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
@@ -30,19 +30,37 @@ public class TemperatureDataApp {
         Location location = new Location();
         location.setCountry("india");
         location.setState("TN");
-        location.setDistrict("Madurai");
-        location.setStreet("UthaKadai");
+        location.setDistrict("Coimbatore");
+        location.setStreet("Isha");
 
-        FileOutputStream outputStream1 = new FileOutputStream("location.txt");
-        ObjectOutputStream outputStream2 = new ObjectOutputStream(outputStream1);
-        outputStream2.writeObject(location);
-        outputStream2.close();
-        outputStream1.close();
-        FileInputStream fileInputStream1 = new FileInputStream("location.txt");
-        ObjectInputStream objectInputStream1 = new ObjectInputStream(fileInputStream1);
-        Location location1 =(Location) objectInputStream1.readObject();
-        System.out.println(location1);
+        fileOutputStream = new FileOutputStream("coimbatore.txt");
+        objectOutputStream = new ObjectOutputStream(fileOutputStream);
+        objectOutputStream.writeObject(location);
+        objectOutputStream.close();
+        objectOutputStream.close();
+//        FileInputStream fileInputStream1 = new FileInputStream("location.txt");
+//        ObjectInputStream objectInputStream1 = new ObjectInputStream(fileInputStream1);
+//        Location location1 =(Location) objectInputStream1.readObject();
+//        System.out.println(location1);
 
+        Location location1=new Location();
+        location1.setCountry("india");
+        location1.setState("TN");
+        location1.setDistrict("Chennai");
+        location1.setStreet("Tambaram");
+
+        fileOutputStream = new FileOutputStream("chennai.txt");
+        objectOutputStream = new ObjectOutputStream(fileOutputStream);
+        objectOutputStream.writeObject(location1);
+        objectOutputStream.close();
+        objectOutputStream.close();
+//        FileInputStream fileInputStream2 = new FileInputStream("location.txt");
+//        ObjectInputStream objectInputStream2 = new ObjectInputStream(fileInputStream2);
+//        Location location =(Location) objectInputStream1.readObject();
+//        System.out.println(location1);
+
+
+       //Commericial commericial=new Commericial();
 
     }
 }
