@@ -1,9 +1,13 @@
 package com.temperature.beans;
 
+import org.myjava.practice.exception.TemperatureDataException;
+
 public class TemperatureSensor implements Sensor{
     private float temp;
-    public TemperatureSensor(float aTemp){
-        temp = aTemp;
+    public TemperatureSensor(float aTemp) throws TemperatureDataException {
+       if(aTemp < -89 || aTemp > 58){
+           throw new TemperatureDataException("out of range Exception");
+       }
     }
     public float getReading(){
         System.out.println(temp);
@@ -48,12 +52,22 @@ public class TemperatureSensor implements Sensor{
     }
 
     public static void main(String[] args) {
-        TemperatureSensor temperatureSensor1 = new TemperatureSensor(32);
+        TemperatureSensor temperatureSensor1 = null;
+        try {
+            temperatureSensor1 = new TemperatureSensor(32);
+        } catch (TemperatureDataException e) {
+            throw new RuntimeException(e);
+        }
         temperatureSensor1.getReading();
         temperatureSensor1.getReading(ReadingUnit.C);
         temperatureSensor1.getReading(ReadingUnit.F);
 
-        TemperatureSensor temperatureSensor= new TemperatureSensor(32);
+        TemperatureSensor temperatureSensor= null;
+        try {
+            temperatureSensor = new TemperatureSensor(32);
+        } catch (TemperatureDataException e) {
+            throw new RuntimeException(e);
+        }
         System.out.println(temperatureSensor.toString());
         System.out.println(temperatureSensor.hashCode());
         System.out.println(temperatureSensor.getClass());

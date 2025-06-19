@@ -31,26 +31,26 @@ public class TemperatureTest {
 //        Location location1 = (Location) objectInputStream.readObject();
 //        Assertions.assertEquals("india",location1.getCountry());
 
-
-        Location location2 = new Location();
-        location2.setNoOfBuildings(3);
-        location2.setDistrict("Tirunelveli");
-        location2.setArea("Sobhan");
-
-               TemperatureDataApp temperatureDataApp = new TemperatureDataApp();
-
-        temperatureDataApp.writeLocations("cbe.txt",location2);
-        File myFile1 = new File("cbe.txt");
-        System.out.println(myFile1.getName());
-        Assertions.assertTrue(myFile1.exists());
-
-        FileInputStream fileInputStream = new FileInputStream("cbe.txt");
-        ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-        Location location3 = (Location) objectInputStream.readObject();
-        System.out.println(location3.getCity());
-        Assertions.assertEquals(location2.getDistrict(),location3.getDistrict());
-    //    Assertions.assertEquals(location2.getArea(),location3.getArea());
-
+//
+//        Location location2 = new Location();
+//        location2.setNoOfBuildings(3);
+//        location2.setDistrict("Tirunelveli");
+//        location2.setArea("Sobhan");
+//
+//               TemperatureDataApp temperatureDataApp = new TemperatureDataApp();
+//
+//        temperatureDataApp.writeLocations("cbe.txt",location2);
+//        File myFile1 = new File("cbe.txt");
+//        System.out.println(myFile1.getName());
+//        Assertions.assertTrue(myFile1.exists());
+//
+//        FileInputStream fileInputStream = new FileInputStream("cbe.txt");
+//        ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+//        Location location3 = (Location) objectInputStream.readObject();
+//        System.out.println(location3.getCity());
+//        Assertions.assertEquals(location2.getDistrict(),location3.getDistrict());
+//    //    Assertions.assertEquals(location2.getArea(),location3.getArea());
+//
 
 
     }

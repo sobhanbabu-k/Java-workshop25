@@ -2,9 +2,10 @@ package com.temperature.beans;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 public class Organization implements Serializable {
-    private Location[] locations;
+    private List<Location> locations;
     private String name;
     private String type;
     private String certificateId;
@@ -13,11 +14,11 @@ public class Organization implements Serializable {
     private String contactNumber;
     private String ceo;
 
-    public Location[] getLocations() {
+    public List<Location> getLocations() {
         return locations;
     }
 
-    public void setLocations(Location[] locations) {
+    public void setLocations( List<Location> locations) {
         this.locations = locations;
     }
 

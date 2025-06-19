@@ -1,7 +1,9 @@
 package com.temperature.beans;
 
+import java.util.List;
+
 public class Zone {
-    private TemperatureData[] temperatureData;
+    private List<TemperatureSensor> temperatureSensors;
     private int zoneNo;
     private int noOfRooms;
     private String zoneName;

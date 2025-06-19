@@ -3,10 +3,10 @@ package com.temperature.beans;
 public final class Commericial extends Building{
     private String time;
 
-    public Commericial(String name, float height, float squareFeet, String aTime) {
-        super(name, height, squareFeet);
-        this.time = aTime;
-    }
+//    public Commericial(String name, float height, float squareFeet, String aTime) {
+//        super(name, height, squareFeet);
+//        this.time = aTime;
+//    }
 
     @Override
     public void getEBill() {
