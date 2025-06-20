@@ -4,9 +4,10 @@ import org.myjava.practice.exception.FloorHeightOfRangeException;
 
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 public sealed abstract class Building permits Residential, Commericial {
-    private Set<Floor> floors;
+    private TreeSet<Floor> floors;
     private String buildingName;
     private String shape;
     private String color;
@@ -16,11 +17,11 @@ public sealed abstract class Building permits Residential, Commericial {
     private float squareFeets;
 
 
-    public Set<Floor> getFloors() {
+    public TreeSet<Floor> getFloors() {
         return floors;
     }
 
-    public void setFloors(Set<Floor> floors) {
+    public void setFloors(TreeSet<Floor> floors) {
         this.floors = floors;
     }
 

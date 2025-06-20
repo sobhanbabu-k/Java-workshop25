@@ -36,20 +36,20 @@ public class TemperatureDataApp {
         List<Building> coimbatoreBuildings = new ArrayList<>();
         coimbatoreBuildings.add(inventor);
         coimbatoreBuildings.add(innovator);
-        chennai.setBuildings(chennaiBuildings);
-        coimbatore.setBuildings(coimbatoreBuildings);
-
-        Floor navigatorFloor = createFloors(0,"DownF",2);
-        Floor navigatorfloor1= createFloors(1,"UG1",2);
-        Set<Floor> floors = Set.of(navigatorFloor,navigatorfloor1);
-        navigator.setFloors(floors);
-
-        Floor creatorFloor = createFloors(1,"FirstFloor",2);
-        Floor creatorFloor1 = createFloors(2,"SecondFloor",2);
-
-        Set<Floor> creators = Set.of(creatorFloor,creatorFloor1);
-        creator.setFloors(creators);
-
+//        chennai.setBuildings(chennaiBuildings);
+//        coimbatore.setBuildings(coimbatoreBuildings);
+//
+//        Floor navigatorFloor = createFloors(0,"DownF",2);
+//        Floor navigatorfloor1= createFloors(1,"UG1",2);
+//        Set<Floor> floors = Set.of(navigatorFloor,navigatorfloor1);
+//        navigator.setFloors(floors);
+//
+//        Floor creatorFloor = createFloors(1,"FirstFloor",2);
+//        Floor creatorFloor1 = createFloors(2,"SecondFloor",2);
+//
+//        Set<Floor> creators = Set.of(creatorFloor,creatorFloor1);
+//        creator.setFloors(creators);
+//
 
 
     }

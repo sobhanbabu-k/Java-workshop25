@@ -2,8 +2,21 @@ package com.temperature.beans;
 
 import org.myjava.practice.exception.TemperatureDataException;
 
+import java.time.LocalDateTime;
+import java.util.Map;
+
 public class TemperatureSensor implements Sensor{
     private float temp;
+    private Map<LocalDateTime,TemperatureData> tempDataMap;
+
+    public Map<LocalDateTime, TemperatureData> getTempData() {
+        return tempDataMap;
+    }
+
+    public void setTempData(Map<LocalDateTime, TemperatureData> tempData) {
+        this.tempDataMap = tempData;
+    }
+
     public TemperatureSensor(float aTemp) throws TemperatureDataException {
        if(aTemp < -89 || aTemp > 58){
            throw new TemperatureDataException("out of range Exception");
@@ -50,6 +63,7 @@ public class TemperatureSensor implements Sensor{
             return this.temp == myObj.temp;
         }
     }
+
 
     public static void main(String[] args) {
         TemperatureSensor temperatureSensor1 = null;
