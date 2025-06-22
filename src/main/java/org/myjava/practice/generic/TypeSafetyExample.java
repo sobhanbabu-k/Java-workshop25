@@ -3,7 +3,7 @@ package org.myjava.practice.generic;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TypeSafetyExamples{
+public class TypeSafetyExample {
     public static void main(String[] args) {
         List list = new ArrayList<>();
         list.add("namesob");

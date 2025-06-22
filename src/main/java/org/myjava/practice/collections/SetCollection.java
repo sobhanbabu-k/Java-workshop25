@@ -4,7 +4,7 @@ package org.myjava.practice.collections;
 import java.util.HashSet;
 import java.util.Set;
 
-public class SetCollections {
+public class SetCollection {
     public static void main(String[] args) {
         Set<Integer> set = new HashSet<>();
         set.add(10);

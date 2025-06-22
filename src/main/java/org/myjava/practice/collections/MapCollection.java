@@ -3,7 +3,7 @@ package org.myjava.practice.collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MapCollections {
+public class MapCollection {
     public static void main(String[] args) {
         Map<Integer,String> cseA = new HashMap<>();
         cseA.put(101,"Sathashini");
