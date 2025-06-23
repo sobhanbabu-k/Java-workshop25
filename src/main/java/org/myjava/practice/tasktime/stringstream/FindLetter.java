@@ -10,15 +10,19 @@ import java.util.stream.Stream;
 public class FindLetter {
     public static void main(String[] args) {
         String[] elements = {"Sobhan has completed the b tech from giet college"};
+
+        // total letters without space
         long count = Arrays.stream(elements)
                 .flatMapToInt(s -> s.chars())
                         .filter(c -> c !=' ')
                         .count();
         System.out.println(count);
 
-        Arrays.stream(elements).flatMap(s -> Arrays.stream(s.split("")));
-        String letters = Arrays.stream(elements).flatMap(s -> Arrays.stream(s.split(" "))).toString();
-        System.out.println(letters.length());
+
+        // total letters with space
+        long count1 = Arrays.stream(elements).flatMapToInt(s -> s.chars()).count();
+        System.out.println(count1);
+
 
 
     }
