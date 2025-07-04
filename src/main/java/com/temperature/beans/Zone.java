@@ -8,6 +8,7 @@ public class Zone {
     private int noOfRooms;
     private String zoneName;
     private int noOfSensors;
+    private String zoneType;
 
     public List<TemperatureSensor> getTemperatureSensors() {
         return temperatureSensors;
@@ -57,5 +58,4 @@ public class Zone {
         this.zoneType = zoneType;
     }
 
-    private String zoneType;
 }

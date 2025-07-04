@@ -8,6 +8,7 @@ public final class Commericial extends Building{
 //        this.time = aTime;
 //    }
 
+
     @Override
     public void getEBill() {
         System.out.println("CurrentBill for Commericial");
