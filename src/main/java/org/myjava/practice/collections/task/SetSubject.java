@@ -12,6 +12,7 @@ public class SetSubject {
         subjectNames.add("Social");
         System.out.println(subjectNames);
         subjectNames.add(0,"first");
+        System.out.println(subjectNames);
 
     }
 }

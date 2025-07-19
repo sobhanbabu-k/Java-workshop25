@@ -19,7 +19,7 @@ public class ListClass {
         List<String> totalNames = new Vector<>();
         totalNames.add("Sobhan babu");
         totalNames.add("Babu");
-        names.addAll(names);
+        names.addAll(totalNames);
         System.out.println(names);
 //        System.out.println(names.removeFirst());
 //        System.out.println(names);

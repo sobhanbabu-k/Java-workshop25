@@ -1,6 +1,4 @@
 package org.myjava.practice.arrays;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayBuilding {
