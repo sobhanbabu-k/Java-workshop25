@@ -7,13 +7,11 @@ import org.junit.jupiter.api.Assertions;
 public class ArithmeticExceptionTest {
     @Test
     public void division(){
-
         int a = 30;
         int b = 6;
         DivisibleClass divisibleClass=new DivisibleClass();
         int result = divisibleClass.div(a,b);
         Assertions.assertEquals(5,result);
-
          a = 30;
          b = 0;
        try {

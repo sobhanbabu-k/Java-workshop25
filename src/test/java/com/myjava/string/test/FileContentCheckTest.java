@@ -21,9 +21,5 @@ public class FileContentCheckTest {
         System.out.println(content.length);
         System.out.println(content);
         Assertions.assertEquals("This is Sobhan first file program",String.valueOf(content));
-
-
     }
-
-
 }

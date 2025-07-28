@@ -15,7 +15,5 @@ public class StringOutputStreamTest {
         outputStream.streamFile("file.txt","This is java");
         File file = new File("file.txt");
         Assertions.assertTrue(file.exists());
-
-
     }
 }
