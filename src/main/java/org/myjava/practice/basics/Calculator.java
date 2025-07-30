@@ -16,7 +16,6 @@ public class Calculator {
     public void div(int a,int b){
         System.out.println("division "+a/b);
     }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the a b values");
