@@ -16,6 +16,5 @@ public class MarksSort {
         System.out.println(name);
         name.sort(Comparator.reverseOrder());
         System.out.println(name);
-
     }
 }

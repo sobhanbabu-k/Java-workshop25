@@ -20,8 +20,7 @@ public class SetCollection {
         set.retainAll(set1);
         setAdd.removeAll(set1);
         System.out.println(setAdd);
-
-
+     //   System.out.println(setAdd);
 //        set.addAll(set1);
 //        System.out.println(set);
 //        set.retainAll(set1);
