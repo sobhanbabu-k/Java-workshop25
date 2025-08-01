@@ -7,25 +7,10 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public sealed abstract class Building permits Residential, Commericial {
-    private TreeSet<Floor> floors;
     private String buildingName;
-    private String shape;
-    private String color;
-    private int buildingNo;
     private int noOfFloors;
-    private float buildingHeight;
-    private float squareFeets;
 
-
-    public TreeSet<Floor> getFloors() {
-        return floors;
-    }
-
-    public void setFloors(TreeSet<Floor> floors) {
-        this.floors = floors;
-    }
-
-    public String getBuildingName(String buildName) {
+    public String getBuildingName() {
         return buildingName;
     }
 
@@ -33,85 +18,11 @@ public sealed abstract class Building permits Residential, Commericial {
         this.buildingName = buildingName;
     }
 
-    public String getShape(String shape) {
-        return this.shape;
-    }
-
-    public void setShape(String shape) {
-        this.shape = shape;
-    }
-
-    public String getColor(String color) {
-        return this.color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public int getBuildingNo(int buildingNo) {
-        return this.buildingNo;
-    }
-
-    public void setBuildingNo(int buildingNo) {
-        this.buildingNo = buildingNo;
-    }
-
-    public int getNoOfFloors(int noOfFloor) {
+    public int getNoOfFloors() {
         return noOfFloors;
     }
 
-    public void setNoOfFloors(int noOfFloors) throws FloorHeightOfRangeException{
-        if(noOfFloors > 100){
-            throw new FloorHeightOfRangeException("Floors Out of Range as per the Government Conditions");
-        }
+    public void setNoOfFloors(int noOfFloors) {
         this.noOfFloors = noOfFloors;
     }
-
-    public float getBuildingHeight(float buildingHeight) {
-        return this.buildingHeight;
-    }
-
-    public void setBuildingHeight(float buildingHeight) {
-        this.buildingHeight = buildingHeight;
-    }
-
-    public float getSquareFeets(float squareFeet) {
-        return squareFeets;
-    }
-
-    public void setSquareFeets(float squareFeets) {
-        this.squareFeets = squareFeets;
-    }
-
-    public boolean isParkingAvaiable() {
-        return parkingAvaiable;
-    }
-
-    public void setParkingAvaiable(boolean parkingAvaiable) {
-        this.parkingAvaiable = parkingAvaiable;
-    }
-
-    private boolean parkingAvaiable;
-
-    public Building() {
-
-    }
-
-    public abstract void getEBill();
-
-    public Building(String name,float height, float squareFeet){
-        this.buildingName = name;
-        this.buildingHeight = height;
-        this.squareFeets = squareFeet;
-
-
-    }
-
-    public static class Parking {
-        public static void print() {
-            System.out.println(" parking place .....");
-        }
-    }
-
 }
