@@ -3,7 +3,7 @@ package com.temperature.beans;
 
 public class Zone {
     private String zoneName;
-    private int noOfSensors;
+    private int noOfSensor;
 
     public String getZoneName() {
         return zoneName;
@@ -14,10 +14,10 @@ public class Zone {
     }
 
     public int getNoOfSensors() {
-        return noOfSensors;
+        return noOfSensor;
     }
 
     public void setNoOfSensors(int noOfSensors) {
-        this.noOfSensors = noOfSensors;
+        this.noOfSensor = noOfSensors;
     }
 }
