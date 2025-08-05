@@ -1,4 +1,4 @@
 package com.temperature.model;
 
-public record Floor(int noOfZones) {
+public record Floor(Integer noOfZones) {
 }

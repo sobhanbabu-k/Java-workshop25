@@ -1,4 +1,4 @@
 package com.temperature.model;
 
-public record Building(String buldingName, int noOfFloor) {
+public record Building(String buldingName, Integer noOfFloor) {
 }
