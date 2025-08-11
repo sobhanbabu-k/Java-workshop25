@@ -4,15 +4,11 @@ import com.temperature.model.Location;
 
 import javax.sql.DataSource;
 import java.sql.*;
-
 public class LocationDao {
     private final DataSource dataSource;
-
-
     public LocationDao(DataSource dataSource) {
         this.dataSource = dataSource;
     }
-
     public Location save(Location loc) {
         String sql = "INSERT INTO location (dno,street,city,state,country, org_id) VALUES (?, ?, ?, ?, ?, ?)";
         try (Connection conn = dataSource.getConnection();
@@ -36,7 +32,6 @@ public class LocationDao {
         }
         return null;
     }
-
     public int count() {
         try (Connection conn = dataSource.getConnection();
              PreparedStatement ps = conn.prepareStatement("SELECT COUNT(*) FROM location");

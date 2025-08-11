@@ -11,11 +11,9 @@ import java.sql.*;
 public class OrganizationDao {
     @Autowired
     private final DataSource dataSource;
-
     public OrganizationDao(DataSource dataSource) {
         this.dataSource = dataSource;
     }
-
     public Organization save(Organization org) {
         String sql = "INSERT INTO organization (name, contactNo, email, website) VALUES (?, ?, ?, ?)";
         try (Connection conn = dataSource.getConnection();
@@ -37,7 +35,6 @@ public class OrganizationDao {
         }
         return null;
     }
-
     public int count() {
         try (Connection conn = dataSource.getConnection();
              PreparedStatement ps = conn.prepareStatement("SELECT COUNT(*) FROM organization");
