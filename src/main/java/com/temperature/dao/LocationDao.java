@@ -32,14 +32,14 @@ public class LocationDao {
         }
         return null;
     }
-    public int count() {
-        try (Connection conn = dataSource.getConnection();
-             PreparedStatement ps = conn.prepareStatement("SELECT COUNT(*) FROM location");
-             ResultSet rs = ps.executeQuery()) {
-            rs.next();
-            return rs.getInt(1);
-        } catch (SQLException e) {
-            throw new RuntimeException("Error counting locations", e);
-        }
-    }
+//    public int count() {
+//        try (Connection conn = dataSource.getConnection();
+//             PreparedStatement ps = conn.prepareStatement("SELECT COUNT(*) FROM location");
+//             ResultSet rs = ps.executeQuery()) {
+//            rs.next();
+//            return rs.getInt(1);
+//        } catch (SQLException e) {
+//            throw new RuntimeException("Error counting locations", e);
+//        }
+//    }
 }
