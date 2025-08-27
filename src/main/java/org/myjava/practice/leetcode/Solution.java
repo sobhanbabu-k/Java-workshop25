@@ -37,9 +37,8 @@ class Solution {
                 list = list.next;
 
         }
-
-
     }
+
     private ListNode addTwoNumbersRecursives(ListNode l1, ListNode l2, int carry) {
         if (l1 == null && l2 == null && carry == 0) {
             return null;
